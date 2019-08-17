@@ -1,0 +1,107 @@
+Begin Object Class=/Script/Engine.Material Name="WeaponMaterial"
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSampleParameter2D Name="MaterialExpressionTextureSampleParameter2D_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSampleParameter2D Name="MaterialExpressionTextureSampleParameter2D_0"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Opacity/Chroma_Key_Alpha.Chroma_Key_Alpha"'
+      FunctionInputs(0)=(ExpressionInputId=E8EC18844F40C70B13666183E67CE5B6,Input=(OutputIndex=-1,InputName="LumaMask"))
+      FunctionInputs(1)=(ExpressionInputId=8170858B4DE067FEC145F485C3FB62B2,Input=(Expression=MaterialExpressionTextureSampleParameter2D'"WeaponMaterial:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=5,InputName="Image Color",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1))
+      FunctionInputs(2)=(ExpressionInputId=4CAB42A844A22EAD2C61DF885B55326D,Input=(Expression=MaterialExpressionVectorParameter'"WeaponMaterial:MaterialExpressionVectorParameter_0"',InputName="Chroma Color",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      FunctionInputs(3)=(ExpressionInputId=9C3602004E5A0A251AAA3C955A2AE43E,Input=(Expression=MaterialExpressionScalarParameter'"WeaponMaterial:MaterialExpressionScalarParameter_0"',InputName="Alpha Cutoff Min"))
+      FunctionInputs(4)=(ExpressionInputId=E00E79F44BA23A8FBDF42EAEA2F86E9C,Input=(Expression=MaterialExpressionScalarParameter'"WeaponMaterial:MaterialExpressionScalarParameter_1"',InputName="Alpha Cutoff Max"))
+      FunctionInputs(5)=(ExpressionInputId=3D7C09354645062B4C3EE38C31F8F218,Input=(OutputIndex=-1,InputName="Alpha Exponent"))
+      FunctionInputs(6)=(ExpressionInputId=29E69A104A12F711259789837C264393,Input=(OutputIndex=-1,InputName="Despill Cuttoff Max"))
+      FunctionInputs(7)=(ExpressionInputId=EAE4FDEE40100E111DB8CA950B577FB4,Input=(OutputIndex=-1,InputName="Despill Exponent"))
+      FunctionOutputs(0)=(ExpressionOutputId=305D2923421BE40E217EFC93C6E0B0BB,Output=(OutputName="Alpha"))
+      FunctionOutputs(1)=(ExpressionOutputId=BCA7533F49CFFAA3C0EEBBB97FA2E1C6,Output=(OutputName="Despill Alpha"))
+      FunctionOutputs(2)=(ExpressionOutputId=ACD5C29A447BEED445F8D78E25ECBC8B,Output=(OutputName="Raw Comparison"))
+      MaterialExpressionEditorX=-544
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=2311C2EF42790986D1FE0CB5E8AA2FC1
+      Material=Material'"WeaponMaterial"'
+      Outputs(0)=(OutputName="Alpha")
+      Outputs(1)=(OutputName="Despill Alpha")
+      Outputs(2)=(OutputName="Raw Comparison")
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      ParameterName="Cutoff Min"
+      ExpressionGUID=36A0228C48F5608E6D1D27BC9E8DB1A8
+      MaterialExpressionEditorX=-896
+      MaterialExpressionEditorY=720
+      MaterialExpressionGuid=14BE766644DE1053FC4BCC8A3EFE98C6
+      Material=Material'"WeaponMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.100000
+      ParameterName="Cutoff Max"
+      ExpressionGUID=9C40009942BF532332FABEB1B716658E
+      MaterialExpressionEditorX=-912
+      MaterialExpressionEditorY=816
+      MaterialExpressionGuid=BCF97DE542959D4BBC6052882D213964
+      Material=Material'"WeaponMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.000000,G=255.000000,B=0.000000,A=0.000000)
+      ParameterName="Color"
+      ExpressionGUID=A187D8B84DFBE98653A95285878937B4
+      MaterialExpressionEditorX=-896
+      MaterialExpressionEditorY=528
+      MaterialExpressionGuid=EF6D186045C9E8227E088F816C5B8FBE
+      Material=Material'"WeaponMaterial"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameter2D_1"
+      ParameterName="Normal"
+      ExpressionGUID=8659B94C411A16E0881890B1A9876019
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=0EB588CD47BDD1F54A5A628FB616A497
+      Material=Material'"WeaponMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameter2D_0"
+      ParameterName="BaseColor"
+      ExpressionGUID=18F92A7F469520E6C2E0F99E16F21CEF
+      MaterialExpressionEditorX=-960
+      MaterialExpressionEditorY=48
+      MaterialExpressionGuid=4FAD75684F78AAF8DBF4DD971D6BF69F
+      Material=Material'"WeaponMaterial"'
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSampleParameter2D'"MaterialExpressionTextureSampleParameter2D_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionTextureSampleParameter2D'"MaterialExpressionTextureSampleParameter2D_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(Expression=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"')
+   BlendMode=BLEND_Translucent
+   TranslucencyLightingMode=TLM_Surface
+   bDisableDepthTest=True
+   Expressions(0)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   Expressions(1)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(2)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(3)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(4)=MaterialExpressionTextureSampleParameter2D'"MaterialExpressionTextureSampleParameter2D_0"'
+   Expressions(5)=MaterialExpressionTextureSampleParameter2D'"MaterialExpressionTextureSampleParameter2D_1"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   ParameterGroupData(4)=(GroupName="None")
+   MaterialFunctionInfos(0)=(StateId=162D6D2B48CD8C456AA56F8E93FB317B,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.VectorLength"')
+   MaterialFunctionInfos(1)=(StateId=67EAC5574EADF9CCDE7DCBAB1DD1BD74,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Opacity/Chroma_Key_Alpha.Chroma_Key_Alpha"')
+   bCanMaskedBeAssumedOpaque=True
+   StateId=4408F31341143FED665D6F84465BAFD8
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="DefaultTexture",TextureReference=/Engine/EngineResources/DefaultTexture.DefaultTexture)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=5381684249F28167232C9D8F17076B1E
+End Object
